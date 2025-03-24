@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 import time
 
+#If mongodb and mongodb shell is install in your machine then simply run "mongosh" this command in your cmd and you will get url in the green colour which will be like this
 client = MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2")
 
 db = client["testdataset"]
